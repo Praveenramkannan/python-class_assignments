@@ -1,0 +1,146 @@
+1. Calculating the birth number in numerology
+26/11/17
+
+a=raw_input("Enter your birthyear")
+
+n=0
+
+z=0
+
+for i in a :
+
+  if i in ['0','1','2','3','4','5','6','7','8','9'] :
+
+    j=int(i)
+
+    n=n+j
+
+    m=n%10
+
+    c=n/10
+
+    z=m+c
+
+print z
+
+
+2. Write a python program to perform sum of three given integers.
+However ,  if any of the two values are equal then the sum will be zero
+
+num1=raw_input("Enter the first number")
+
+num2=raw_input("Enter the 2nd number")
+
+num3=raw_input("Enter the 3rd number")
+
+if(num1==num2 or num1==num3 or num2==num3) :
+
+  res=0
+
+  print res
+
+else :
+
+  res=int(num1)+int(num2)+int(num3)
+
+  print res
+
+
+
+3. Write a python program to check whether a given year is leap year or not?
+
+year=raw_input("Enter the year")
+
+if((int(year)%4==0  and int(year)%100!=0) or int(year)%400==0 ) :
+
+    print "The given year is leap year"
+
+else :
+
+    print "The given year is not a leap year"
+
+4. write a python script to validate the strong password.
+
+import re
+
+pas=raw_input("Enter your password:")
+
+isalpha='f'
+
+isnumber='f'
+
+isspl='f'
+
+if re.search('[a-z]',pas):
+
+  isalpha='t'
+
+if re.search('[0-9]',pas):
+
+  isnumber='t'
+
+if re.search('[!,@,#,$,%,^,&,*,(,)]',pas):
+
+  isspl='t'
+
+if (isalpha=='t' and isnumber=='t' and isspl=='t'):
+
+  print "Strong password"
+
+else :
+
+  print "Weak password"
+
+5. Write a program to accept a sentence and calculate the number of upper case letteers and lower case letters.
+Suppose the following i/p is supplied to the progeam:
+Hello World!
+Then the output should be 
+UPPER CASE 2
+LOWER CASE 8
+
+u=0
+
+l=0
+
+val=raw_input("Enter the string:")
+
+for i in val :
+
+  if i.isupper():
+
+    u=u+1
+
+  if i.islower():
+
+    l=l+1
+
+print "UPPER CASE",u
+
+print "LOWER CASE",l
+
+6. declare list containing nums get even and sum of that
+
+afg=[1,2,3,4,5,6,7,8,9,80]
+
+sume=0
+
+for i in afg:
+
+  if i%2==0:
+
+    sume=sume+i
+
+print sume
+
+
+7. Get num from users and store it in a list and a tuple
+
+val=raw_input("Enter numbers with comma separated")
+
+lis=val.split(',')
+
+tup=tuple(lis)
+
+print lis
+
+print tup

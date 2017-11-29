@@ -1,0 +1,215 @@
+BASICS:
+-------
+online IDE: https://repl.it/@Praveenramk/EnlightenedPapayawhipTapir
+
+
+'''
+b=2
+
+c = 5
+
+print type(b),type(c)
+
+name = 'praveen'
+
+print name
+
+print type(name)
+
+print dir(name)
+
+print id(name)
+
+#z=b+name
+
+
+
+z2=4
+print 
+z2
+print 
+type(z2)
+
+print dir(z2)
+
+print id(z2)
+'''
+'''
+print 4+4
+
+print 4-4
+
+print 4*2
+
+print 4/1
+
+print 4%3
+
+print 4 **2
+
+
+print 1<3
+
+print 1>3
+
+print 1>=3
+
+print 1<=3
+
+print 3==3
+
+print 1!=3
+
+print 'a' in 'abc'
+
+print 'duydf' in 'bsdiasdsuduy'
+
+s='abc'
+c='abc'
+
+print s not in c
+'''
+
+'''
+a='dfdsf don"t adsadsd'
+
+print a
+
+b="sgsdfd'f asdds"
+
+print b
+
+c='''adsjbdkjsbdkjdkjsakj'''
+
+print c
+
+d="""asdjksdbkjsbdkjsbdkabdkj"""
+
+print d
+'''
+
+#n=raw_input("enter a no:")
+
+#print type(n)
+
+print('ab'+'sgs'*2)
+
+print 'fg' +'1'
+
+print 1+1
+
+EX 1:
+-----
+//Getting the firstname and last name from user and printing it with a space.
+fn=raw_input("Enter the first name")
+
+ln=raw_input("Enter you last name")
+
+
+print('the full name is '+fn+" "+ln)
+
+EX 2:
+-----
+a=10
+
+if(a==0):
+
+    print "a is zero"
+el
+    if(a>0):
+
+    print 'a is pos'
+
+    print 'a value is'
+
+if(a==10):
+
+    print 'a=10'
+
+else:
+  
+    print 'a is neg'
+
+
+Tasks:
+1. Get first name and last name from user and print your full name
+code:
+fn=raw_input("Enter the first name")
+
+ln=raw_input("Enter you last name")
+
+
+print('the full name is '+fn+" "+ln)
+
+
+o/p:
+Enter the first name praveen 
+Enter you last name ram
+the full name is praveen  ram
+
+
+2. Declare a integer variable and try all intger funs.
+i.bit_length
+a=7
+
+print (dir(a))
+
+print a.bit_length()
+3
+
+ii.conjugate
+a=7+1j
+
+print a.conjugate()
+7-1j
+
+iii.
+3. Declare a String variable and try all string funs.
+i. capitalize
+a="praveen"
+
+print dir(a)
+
+print a.capitalize()
+o/p
+Praveen 
+ii. center
+code
+a="praveen"
+
+b="ram"
+
+print dir(a)
+
+print a.center(34)
+o/p
+             praveen
+
+
+4. Get ur full name, age as input from user and print first name, last name, age using string slice
+ i. 2 i/p fullname and age
+ ii. print frst name,lst name, age
+ iii. when age>=18, eligible to vote
+ iv. when age<18, not eligible to vote 
+fullname=raw_input("Enter your fullname")
+
+age=raw_input("Enter your age")
+
+#print "The fist name "+fullname[0:7]
+
+fname,lname=fullname.split()
+
+print "The fnmae is "+fname
+
+print "the lname is "+lname
+
+agen=int(age)
+
+print "the age is "+age
+if (agen>18):
+
+  print "Eligible to vote"
+
+else:
+
+  print "Not eligible to vote"
