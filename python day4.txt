@@ -1,0 +1,184 @@
+1.Program
+"""
+Name:Main.py
+
+Author:Praveen Ram
+
+Date:30-11-2017
+
+"""
+
+def add(n1,n2):
+
+  n3=int(n1)+int(n2)
+
+  print n3 
+
+
+def sub(n1,n2):
+
+  n3=int(n1)-int(n2)
+
+  print n3
+
+
+def mul(n1,n2):
+
+  n3=int(n1)*int(n2)
+
+  print n3
+
+def div(n1,n2):
+
+  try:
+
+    n3=int(n1)/int(n2)
+
+    print n3
+
+  except Exception as e:
+
+    print e
+
+
+
+print "Calculator application"
+
+print "1.Addition"
+
+print "2.subraction"
+
+print "3.Multiplication"
+
+print "4.Division"
+
+fun=raw_input("Which function to perform?")
+
+num1=raw_input("Enter the first number")
+
+num2=raw_input("Enter the second number")
+
+if fun=='Addition' or fun=='addition' or fun=='add' or fun=='1':
+
+  add(num1,num2)
+
+if fun=='Subraction' or fun=='subraction' or fun=='sub' or fun=='2':
+
+  sub(num1,num2)
+
+
+if fun=='Multiplication' or fun=='multiplication' or fun=='mul' or fun=='3':
+
+  mul(num1,num2)
+
+
+if fun=='Division' or fun=='division' or fun=='div' or fun=='4':
+
+  div(num1,num2)
+
+
+2.Program
+
+"""
+Name:Main.py
+
+Author:Praveen Ram
+
+Date:30-11-2017
+
+"""
+
+def cons_tring(s1,s2):
+
+  s3=s1+s2
+
+  print s3
+
+
+str1=raw_input("Enter the first string")
+
+str2=raw_input("Enter the second string")
+
+cons_tring(str1,str2)
+
+3.Program
+
+"""
+Name:Main.py
+
+Author:Praveen Ram
+
+Date:30-11-2017
+
+"""
+
+
+def add_fun(n1):
+
+  n=int(n1)
+
+  sum=0
+
+  while(n>0):
+
+    m=n%10
+
+    sum=sum+m
+
+    n=n/10
+
+  print sum
+
+
+num=raw_input("Enter the number")
+
+add_fun(num)
+
+
+4.Program
+"""
+Name:Main.py
+
+Author:Praveen Ram
+
+Date:30-11-2017
+
+"""
+def write_file():
+
+  f=open("marks.txt",'w')
+
+  f.write("Science=50\nMaths=90\nEnglish=87\nTamil=92")
+
+  f.close
+
+
+
+def read_file():
+
+  fr=open("marks.txt",'r')
+
+  temp=0
+
+  lis=fr.readlines()
+
+  for i in lis:
+
+    str_lis=i.split('=')
+
+    no=str_lis[1].strip().strip('\n')
+
+    temp=temp+int(no)
+
+    fr.close()
+
+  print temp
+
+    
+    
+
+write_file()
+
+read_file()
+
+
